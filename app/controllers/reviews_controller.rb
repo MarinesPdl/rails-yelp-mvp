@@ -1,10 +1,6 @@
 class ReviewsController < ApplicationController
   before_action :set_restaurant, only: [:index, :new, :create]
 
-  def index
-    @reviews = Review.new
-  end
-
   def new
     @review = Review.new
   end
